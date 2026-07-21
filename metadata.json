@@ -1,6 +1,6 @@
 {
   "name": "Trelvix AI",
-  "description": "A premium, multi-page marketing platform for Trelvix AI—the unified professional workspace.",
+  "description": "Meet Trelvix AI, the intelligent workspace that brings conversations, projects, documents, images, vision, voice, and powerful reasoning together in one beautiful experience.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
