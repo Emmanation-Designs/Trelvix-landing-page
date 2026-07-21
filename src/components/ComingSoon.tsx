@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Database, Layout, Bot, Users } from 'lucide-react';
+import { Database, Layout, Bot, Users, Sparkles } from 'lucide-react';
 
 interface ActiveFeature {
   id: string;
@@ -25,7 +25,7 @@ const ACTIVE_WORKFLOWS: ActiveFeature[] = [
   {
     id: 'live-canvas',
     title: 'Interactive Canvas',
-    description: 'A multi-view workspace allowing real-time documents co-editing, system layouts design, and code modification side-by-side.',
+    description: 'A multi-view workspace allowing real-time document co-editing, system layout design, and code modification side-by-side.',
     icon: Layout,
     badgeText: 'LIVE',
   },
@@ -37,11 +37,11 @@ const ACTIVE_WORKFLOWS: ActiveFeature[] = [
     badgeText: 'STABLE',
   },
   {
-    id: 'live-team',
-    title: 'Team Shared Workspace',
-    description: 'Grant team members permissions to join designated workspace containers, synchronize prompts, and audit project history logs securely.',
-    icon: Users,
-    badgeText: 'ENTERPRISE',
+    id: 'custom-personas',
+    title: 'Custom Persona Workspaces',
+    description: 'Configure custom instructions, domain knowledge rules, and tone parameters for each isolated workspace.',
+    icon: Sparkles,
+    badgeText: 'ADVANCED',
   },
 ];
 

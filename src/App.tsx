@@ -13,7 +13,6 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Features } from './pages/Features';
 import { PricingPage } from './pages/PricingPage';
-import { Enterprise } from './pages/Enterprise';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Security } from './pages/Security';
@@ -45,7 +44,6 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/features" element={<Features />} />
               <Route path="/pricing" element={<PricingPage />} />
-              <Route path="/enterprise" element={<Enterprise />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/security" element={<Security />} />

@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Brain, Layers, Sparkles, Shield, Heart } from 'lucide-react';
+import { Brain, Layers, Sparkles, Heart, Users } from 'lucide-react';
 
 export const About: React.FC = () => {
   return (
@@ -18,26 +18,26 @@ export const About: React.FC = () => {
             Platform Vision
           </div>
           <h1 className="text-4xl sm:text-6xl font-sans font-bold tracking-tight text-neutral-900 dark:text-neutral-50 leading-tight">
-            Building the Workspace <br />for <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400">Deep Cognition</span>
+            Building the Unified Workspace <br />for <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400">AI Intelligence</span>
           </h1>
           <p className="text-base sm:text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed font-sans">
-            Trelvix AI was born out of a simple, persistent frustration: computational tools have become highly fragmented. Developers, researchers, and creators are constantly switching tabs, copying prompts, and losing structural context. 
+            Trelvix AI was born out of a simple, persistent frustration: modern AI tools have become fragmented. Creators, developers, students, and professionals spend too much time switching tabs, losing prompt context, and managing scattered chat histories.
           </p>
           <p className="text-base sm:text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed font-sans">
-            Our mission is to unify these elements into an elegant, high-throughput workspace. We believe that tools should adapt to the speed of human thought—not the other way around.
+            Our mission is to unify conversations, image creation, project management, and intelligent reasoning into one cohesive, beautifully designed experience—helping you think, create, learn, and build faster.
           </p>
         </div>
       </section>
 
-      {/* Corporate Values */}
+      {/* Core Principles */}
       <section className="py-24 px-6 border-b border-neutral-100 dark:border-neutral-900 bg-neutral-50/50 dark:bg-neutral-900/10">
         <div className="max-w-7xl mx-auto space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-4">
             <h2 className="text-3xl font-bold font-sans text-neutral-900 dark:text-neutral-50">
-              Our Cognitive Principles
+              Our Core Principles
             </h2>
             <p className="text-sm text-neutral-600 dark:text-neutral-400 font-sans">
-              We guide our development cycles using four core values to ensure Trelvix remains an uncompromised medium for intellectual breakthroughs.
+              We guide our platform development using core values that ensure Trelvix remains an effortless, empowering environment for every task.
             </p>
           </div>
 
@@ -47,55 +47,55 @@ export const About: React.FC = () => {
               <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500">
                 <Brain className="w-5 h-5" />
               </div>
-              <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-50">Deep Cognition Research</h3>
+              <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-50">Simplicity First</h3>
               <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                We prioritize logical and reasoning capabilities over superficial parameters. We stress-test our models on high-order synthesis, complex program debugging, and detailed systems planning to ensure superior intelligence.
+                Technology should reduce complexity, not create it. Trelvix brings clean interfaces and intuitive workflows to your daily tasks so you can focus on generating ideas.
               </p>
             </div>
 
             {/* Core Value 2 */}
             <div className="p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/40 space-y-4 shadow-sm hover:border-emerald-500/20 transition-all">
               <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500">
-                <Layers className="w-5 h-5" />
+                <Sparkles className="w-5 h-5" />
               </div>
-              <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-50">Architectural Containment</h3>
+              <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-50">Intelligence That Fits the Task</h3>
               <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                By designing isolated project containers, we prevent the context drift that plagues standard chat histories. Your projects remain clean, compartmentalized, and mathematically partitioned from one another.
+                Choose the level of thinking you need—from fast everyday answers to deep step-by-step reasoning—while Trelvix handles the technical complexity behind the scenes.
               </p>
             </div>
 
             {/* Core Value 3 */}
             <div className="p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/40 space-y-4 shadow-sm hover:border-emerald-500/20 transition-all">
               <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500">
-                <Sparkles className="w-5 h-5" />
+                <Layers className="w-5 h-5" />
               </div>
-              <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-50">Aesthetic Coherence</h3>
+              <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-50">Organized Workspaces</h3>
               <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                We believe visual beauty is a component of utility, not a distraction. High-contrast display typography, mathematically correct nested border-radii, and precise negative space reduce sensory fatigue.
+                Keep related conversations, custom instructions, and files neatly categorized inside dedicated project workspaces for enhanced focus and productivity.
               </p>
             </div>
 
             {/* Core Value 4 */}
             <div className="p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/40 space-y-4 shadow-sm hover:border-emerald-500/20 transition-all">
               <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500">
-                <Shield className="w-5 h-5" />
+                <Users className="w-5 h-5" />
               </div>
-              <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-50">Zero-Trust Sovereignty</h3>
+              <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-50">Built for Everyone</h3>
               <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                Your data belongs exclusively to your workspace. We deploy isolated, zero-retention databases and secure firewalls to ensure proprietary guidelines and intellectual properties remain strictly locked.
+                Whether you are a student, developer, entrepreneur, creator, or professional, Trelvix adapts seamlessly to the unique way you work and learn.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Research Milestones */}
+      {/* Crafted Section */}
       <section className="py-24 px-6 max-w-4xl mx-auto text-center space-y-12">
         <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-50">
-          Crafted with Professional Dedication
+          Crafted for Modern Workflows
         </h2>
         <p className="text-sm text-neutral-500 dark:text-neutral-400 max-w-xl mx-auto leading-relaxed font-sans">
-          Our teams are continuously compiling and scaling Trelvix nodes across multiple research zones. We are committed to building safe, transparent, and beautiful technology that empowers people to solve complex global equations.
+          Trelvix AI is designed to bring harmony to your creative and technical pursuits. We are committed to building reliable, transparent, and accessible AI tools that empower people everywhere to turn ideas into reality.
         </p>
         <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 text-xs text-neutral-600 dark:text-neutral-400">
           <span>Designed with absolute care by the Trelvix Team</span>

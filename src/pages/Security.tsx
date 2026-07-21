@@ -4,37 +4,36 @@
  */
 
 import React from 'react';
-import { Shield, Key, EyeOff, Lock, Server, CheckCircle } from 'lucide-react';
-import { motion } from 'motion/react';
+import { Shield, Key, Lock, Server, CheckCircle } from 'lucide-react';
 
 export const Security: React.FC = () => {
   const securityPillars = [
     {
-      icon: EyeOff,
-      title: 'Zero Data Retention',
-      description: 'Your workspace prompts, documents, generated images, and codebase queries are processed through zero-retention tunnels. We never train models on your proprietary IP.',
+      icon: Lock,
+      title: 'HTTPS Encrypted Connections',
+      description: 'All communications between your browser and Trelvix servers are encrypted in transit using modern HTTPS and TLS protocols to prevent eavesdropping.',
     },
     {
       icon: Shield,
-      title: 'Context Isolation',
-      description: 'Every project container sits inside an independent, mathematically partitioned logical vault. Context never drifts or leaks between workspaces.',
+      title: 'Private Account Workspaces',
+      description: 'Your workspace conversations, prompts, and project files are strictly tied to your authenticated account with access controls preventing unauthorized views.',
     },
     {
       icon: Key,
-      title: 'End-to-End Encryption',
-      description: 'All data is encrypted in transit using TLS 1.3 and at rest via AES-256. Access keys are managed within hardware-protected security modules.',
+      title: 'Secure Account Authentication',
+      description: 'Robust authentication protocols ensure session protection, keeping your account details, custom parameters, and chat history safe.',
     },
     {
       icon: Server,
-      title: 'Sovereign Infrastructure',
-      description: 'Run Trelvix nodes on isolated servers with customizable physical locations. Align with sovereign geographical laws and corporate mandates.',
+      title: 'Secure Cloud Infrastructure',
+      description: 'Trelvix AI is deployed on modern cloud infrastructure with active monitoring, backend firewall protection, and reliable data storage practices.',
     },
   ];
 
-  const complianceStandards = [
-    { title: 'SOC 2 Type II Alignment', desc: 'Continuous compliance tracking across all system operations, logging pipelines, and development cycles.' },
-    { title: 'GDPR & CCPA Compliance', desc: 'Complete user sovereignty over active datasets, allowing immediate absolute erasure of workspace logs.' },
-    { title: 'ISO 27001 Controls', desc: 'Rigorous risk management guidelines directing access controls, network configurations, and incident responses.' },
+  const securityPractices = [
+    { title: 'Strict Access Control', desc: 'User isolation ensures that your private conversations, personal notes, and workspace materials remain confidential and secure.' },
+    { title: 'Protected Conversation Storage', desc: 'Saved conversation histories and workspace projects are stored safely in cloud databases with restricted system permissions.' },
+    { title: 'Continuous Patching & Maintenance', desc: 'Our platform continuously applies system updates, dependency security patches, and modern web application security practices.' },
   ];
 
   return (
@@ -45,13 +44,13 @@ export const Security: React.FC = () => {
         
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
           <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-500 text-xs font-mono font-semibold tracking-wider uppercase">
-            Sovereign Trust
+            Platform Security
           </div>
           <h1 className="text-4xl sm:text-6xl font-sans font-bold tracking-tight text-neutral-900 dark:text-neutral-50 leading-tight">
-            Absolute Integrity <br />for <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400">Proprietary Logic</span>
+            Built for Privacy <br />and <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400">Data Protection</span>
           </h1>
           <p className="text-base sm:text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed font-sans">
-            Trelvix AI treats security not as a secondary compliance checklist, but as an absolute architectural mandate. We build isolated systems that protect your intellectual property at every computational layer.
+            Trelvix AI protects your data through secure account authentication, HTTPS encrypted connections, and strict user access controls across all conversations and workspaces.
           </p>
         </div>
       </section>
@@ -61,10 +60,10 @@ export const Security: React.FC = () => {
         <div className="max-w-7xl mx-auto space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-4">
             <h2 className="text-3xl font-bold font-sans text-neutral-900 dark:text-neutral-50">
-              Four Layers of Deep Defense
+              Core Security Foundations
             </h2>
             <p className="text-sm text-neutral-600 dark:text-neutral-400 font-sans">
-              Learn how our custom-engineered workspace isolation paradigm preserves information security across all team operations.
+              Learn how our application security measures safeguard your prompts, projects, and personal workspace data.
             </p>
           </div>
 
@@ -90,23 +89,23 @@ export const Security: React.FC = () => {
         </div>
       </section>
 
-      {/* Compliance Section */}
+      {/* Security Practices Section */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 space-y-6">
             <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-500 text-xs font-mono font-semibold tracking-wider uppercase">
-              Global Compliance
+              Privacy Standards
             </div>
             <h2 className="text-3xl font-bold font-sans text-neutral-900 dark:text-neutral-50 leading-tight">
-              Aligned with Strict Industry Standards
+              Modern Defense & Privacy Safeguards
             </h2>
             <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed font-sans">
-              We continually audit our computational nodes, data routing pipelines, and storage engines to guarantee alignment with global compliance frameworks.
+              We follow industry best practices for application security, web protection, and user data privacy to keep your AI interactions safe.
             </p>
           </div>
 
           <div className="lg:col-span-7 space-y-6">
-            {complianceStandards.map((std, idx) => (
+            {securityPractices.map((std, idx) => (
               <div 
                 key={idx}
                 className="p-6 rounded-2xl border border-neutral-100 dark:border-neutral-900 bg-neutral-50/50 dark:bg-neutral-900/20 flex items-start space-x-4"
@@ -126,3 +125,4 @@ export const Security: React.FC = () => {
     </div>
   );
 };
+

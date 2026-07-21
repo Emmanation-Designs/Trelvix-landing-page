@@ -44,7 +44,7 @@ export interface ComparisonPoint {
 export interface ProjectCard {
   id: string;
   title: string;
-  category: 'Website' | 'Business' | 'School' | 'Personal';
+  category: 'Website' | 'Business' | 'School' | 'Study' | 'Personal';
   colorClass: string;
   description: string;
 }

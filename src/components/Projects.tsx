@@ -14,35 +14,35 @@ const WORKSPACE_PROJECTS: ProjectCard[] = [
     title: 'Website Project',
     category: 'Website',
     colorClass: 'text-emerald-500 bg-emerald-500/10 border-emerald-500/20',
-    description: 'Hosts production assets, localized content mappings, database credentials proxies, and structural layouts.',
+    description: 'Build websites with AI conversations, planning, coding assistance and image generation.',
   },
   {
     id: 'proj-bus',
-    title: 'Business Intel',
+    title: 'Business Workspace',
     category: 'Business',
     colorClass: 'text-teal-500 bg-teal-500/10 border-teal-500/20',
-    description: 'Encloses commercial spreadsheets, Q3 marketing outlines, corporate pitch slide scripts, and legal summaries.',
+    description: 'Marketing, proposals, strategy, planning, customer support and business conversations.',
   },
   {
     id: 'proj-sch',
-    title: 'School Research',
-    category: 'School',
+    title: 'Study Workspace',
+    category: 'Study',
     colorClass: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
-    description: 'Houses neurological dissertation chapters, study summaries, historical references, and algebraic sheets.',
+    description: 'Research, PDFs, OCR, notes, assignments and learning with AI.',
   },
   {
     id: 'proj-pers',
     title: 'Personal Workspace',
     category: 'Personal',
     colorClass: 'text-teal-400 bg-teal-400/10 border-teal-400/20',
-    description: 'Contains health logs, exercise routine templates, travel planner outlines, and daily meditative journal entries.',
+    description: 'Writing, planning, journaling, travel ideas, productivity and everyday assistance.',
   },
 ];
 
-const categoryIconMap = {
+const categoryIconMap: Record<string, React.FC<{ className?: string }>> = {
   Website: Globe,
   Business: Briefcase,
-  School: GraduationCap,
+  Study: GraduationCap,
   Personal: Heart,
 };
 
@@ -66,7 +66,7 @@ export const Projects: React.FC = () => {
               Isolate Your Thoughts with Workspaces
             </h2>
             <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
-              Organise instructions, custom instructions, conversation parameters, and document bundles inside compartmentalised, high-security containers.
+              Organize instructions, custom instructions, conversation parameters, and document bundles inside compartmentalized, high-security containers.
             </p>
           </div>
           
@@ -117,22 +117,13 @@ export const Projects: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Simulated Container Folder Hierarchy UI */}
-                <div className="mt-6 pt-5 border-t border-neutral-200/70 dark:border-neutral-800/80 space-y-2.5">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-neutral-400 dark:text-neutral-500">
-                    <span className="flex items-center">
-                      <Folder className="w-3.5 h-3.5 mr-1.5 text-neutral-400" />
-                      workspace_assets/
-                    </span>
-                    <span>12 files</span>
-                  </div>
-                  <div className="flex items-center justify-between text-[11px] font-mono text-neutral-400 dark:text-neutral-500">
-                    <span className="flex items-center">
-                      <FileText className="w-3.5 h-3.5 mr-1.5 text-neutral-400" />
-                      instructions.md
-                    </span>
-                    <span className="text-emerald-500 dark:text-emerald-400 font-bold">active</span>
-                  </div>
+                {/* Workspace Container Status */}
+                <div className="mt-6 pt-5 border-t border-neutral-200/70 dark:border-neutral-800/80 flex items-center justify-between text-[11px] font-mono text-neutral-400 dark:text-neutral-500">
+                  <span className="flex items-center text-emerald-500 font-semibold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2 animate-pulse" />
+                    Trelvix Workspace
+                  </span>
+                  <span>Isolated Context</span>
                 </div>
               </motion.div>
             );

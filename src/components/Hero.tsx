@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
       if (simState === 0) {
         setTypingText('');
         setIsThinking(false);
-        let text = 'render highly polished 3D emerald crystal thought core, 8k, luxury';
+        let text = 'Create a premium logo concept for Trelvix AI...';
         let i = 0;
         const typeInterval = setInterval(() => {
           if (i < text.length) {
@@ -187,11 +187,8 @@ export const Hero: React.FC = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <button
-              onClick={() => {
-                const el = document.getElementById('pricing');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
+            <a
+              href="https://trelvixai.com"
               className="group relative w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-white bg-neutral-900 dark:bg-neutral-50 dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-xl transition-all duration-300 shadow-lg shadow-neutral-950/10 dark:shadow-neutral-50/10 cursor-pointer overflow-hidden"
             >
               <span className="relative z-10 flex items-center space-x-2">
@@ -199,7 +196,7 @@ export const Hero: React.FC = () => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </button>
+            </a>
 
             <button
               onClick={handleDemoClick}

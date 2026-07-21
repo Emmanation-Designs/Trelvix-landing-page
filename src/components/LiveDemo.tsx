@@ -14,27 +14,27 @@ const IMAGE_NEXUS = '/src/assets/images/trelvix_neural_nexus_1784503986038.jpg';
 const SCRIPT_STEPS = [
   {
     type: 'user_type',
-    text: 'Analyze the Q2 Quantum Core telemetry and compile a neural pathway rendering.',
+    text: 'Build a responsive React dashboard with dark mode and real-time analytics.',
     duration: 3000,
   },
   {
     type: 'thinking',
-    text: 'Initializing Trelvix Advanced Reasoning Core...\n- Mapping 104,281 spatial nodes...\n- Reconstructing coherence parameters...\n- Telemetry alignment verified.',
+    text: 'Initializing Trelvix Advanced Reasoning Core...\n- Mapping component hierarchy...\n- Constructing responsive dark mode styles...\n- State synchronization verified.',
     duration: 2500,
   },
   {
     type: 'assistant_stream',
-    text: 'Advanced Reasoning resolved. Quantum Core telemetry indicates absolute convergence at a 99.84% coherence metric. I have compiled the neural pathway schematic displaying hyper-dense emerald node connections. Telemetry packet logging is stable.',
+    text: 'Advanced Reasoning resolved. I have created a clean, responsive React dashboard with dark mode toggles, real-time metrics, and fluid layouts.',
     duration: 4500,
   },
   {
     type: 'image_generation',
-    text: 'Rendering path network...',
+    text: 'Rendering layout preview...',
     duration: 2000,
   },
   {
     type: 'voice_response',
-    text: 'Audio report ready: Telemetry packet stabilized.',
+    text: 'Audio report ready: Dashboard architecture compiled.',
     duration: 5000,
   },
 ];
@@ -157,7 +157,7 @@ export const LiveDemo: React.FC = () => {
           setShowImage(true);
           setMessages((prev) => [
             ...prev,
-            { id: '3', sender: 'assistant', text: 'Telemetry Node path network rendering successfully projected:', imageUrl: IMAGE_NEXUS }
+            { id: '3', sender: 'assistant', text: 'Dashboard layout preview successfully generated:', imageUrl: IMAGE_NEXUS }
           ]);
           setStepIndex(4); // Go to voice
         }, 2200);
@@ -211,7 +211,7 @@ export const LiveDemo: React.FC = () => {
             Reasoning & Rendering in Action
           </h2>
           <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
-            Witness our advanced multi-threading engine map logical solutions, render high-fidelity graphics, and synthesise speech simultaneously.
+            Witness our advanced multi-threading engine map logical solutions, render high-fidelity graphics, and synthesize speech simultaneously.
           </p>
         </div>
 
@@ -287,7 +287,7 @@ export const LiveDemo: React.FC = () => {
                       >
                         <img 
                           src={msg.imageUrl} 
-                          alt="Rendered neural pathways" 
+                          alt="Dashboard layout preview" 
                           className="w-full object-cover max-h-[220px]"
                           referrerPolicy="no-referrer"
                         />

@@ -53,7 +53,7 @@ const PRICING_TIERS: PricingTier[] = [
       'Unlimited image generation & in-line edits',
       'Unlimited isolated workspace containers',
       'Full workspace organization & context memory',
-      'Dedicated enterprise infrastructure support',
+      'Dedicated priority infrastructure support',
     ],
     ctaText: 'Get Started with Pro',
   },
@@ -178,6 +178,23 @@ export const Pricing: React.FC = () => {
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-8">
+                <a
+                  href="https://trelvixai.com"
+                  className={`group relative w-full inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold rounded-xl transition-all duration-300 shadow-sm cursor-pointer overflow-hidden ${
+                    tier.isPopular
+                      ? 'text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 shadow-emerald-500/20'
+                      : 'text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700'
+                  }`}
+                >
+                  <span className="relative z-10 flex items-center space-x-2">
+                    <span>{tier.ctaText}</span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </a>
               </div>
             </div>
           ))}

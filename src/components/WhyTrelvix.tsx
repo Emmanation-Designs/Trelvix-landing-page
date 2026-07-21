@@ -48,7 +48,7 @@ const COMPARISON_DATA: ComparisonPoint[] = [
     feature: 'Extensible Platform',
     trelvix: 'Advanced agent toolchains',
     competitors: 'Static document chat models',
-    description: 'Fully integrated with autonomous agents, rich canvas workflows, and secure workspace collaboration features.',
+    description: 'Fully integrated with autonomous agents, rich canvas workflows, and secure workspace isolation features.',
   },
 ];
 

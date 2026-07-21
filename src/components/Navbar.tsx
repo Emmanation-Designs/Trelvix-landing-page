@@ -36,7 +36,6 @@ export const Navbar: React.FC = () => {
     { name: 'Features', path: '/features' },
     { name: 'Pricing', path: '/pricing' },
     { name: 'Security', path: '/security' },
-    { name: 'Enterprise', path: '/enterprise' },
     { name: 'FAQ', path: '/faq' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
@@ -70,7 +69,7 @@ export const Navbar: React.FC = () => {
             <div className="absolute inset-0 rounded-xl bg-emerald-500/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
           <span className="font-sans text-xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 transition-colors duration-300">
-            Trelvix<span className="text-emerald-500">.ai</span>
+            Trelvix <span className="text-emerald-500">AI</span>
           </span>
         </Link>
 
@@ -125,21 +124,21 @@ export const Navbar: React.FC = () => {
             </motion.div>
           </button>
 
-          <Link 
-            to="/pricing"
+          <a 
+            href="https://trelvixai.com"
             className="font-sans text-sm font-medium text-neutral-700 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors px-4 py-2 cursor-pointer"
           >
             Sign In
-          </Link>
+          </a>
 
-          <Link 
-            to="/pricing"
+          <a 
+            href="https://trelvixai.com"
             className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-white rounded-xl group bg-gradient-to-br from-emerald-500 to-teal-600 hover:text-white dark:text-white cursor-pointer"
           >
             <span className="relative px-5 py-2 transition-all ease-in duration-75 bg-neutral-900 dark:bg-neutral-950 rounded-xl group-hover:bg-opacity-0">
               Get Started
             </span>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile menu trigger */}
@@ -192,18 +191,18 @@ export const Navbar: React.FC = () => {
             <div className="h-px bg-neutral-200 dark:bg-neutral-800/60 my-2" />
             
             <div className="flex flex-col space-y-3">
-              <Link 
-                to="/pricing"
+              <a 
+                href="https://trelvixai.com"
                 className="py-2.5 w-full rounded-xl border border-neutral-300 dark:border-neutral-800 text-center font-medium text-neutral-700 dark:text-neutral-300"
               >
                 Sign In
-              </Link>
-              <Link 
-                to="/pricing"
+              </a>
+              <a 
+                href="https://trelvixai.com"
                 className="py-2.5 w-full rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-center font-medium text-white shadow-lg shadow-emerald-500/20"
               >
                 Get Started
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}

@@ -36,11 +36,11 @@ export const FAQ: React.FC = () => {
     },
     {
       question: 'Is my data used to train AI models?',
-      answer: 'No. Trelvix AI operates on a strict zero-retention policy. All workspace inputs, code repositories, documents, and creative designs are processed through secure, encrypted tunnels and are never logged or stored for model training purposes.',
+      answer: 'No. Trelvix AI operates on a strict zero-retention policy. All workspace inputs, prompts, documents, and creative designs are processed through secure, encrypted tunnels and are never logged or stored for model training purposes.',
     },
     {
       question: 'What are isolated workspace containers?',
-      answer: 'Unlike standard AI interfaces that dump all chat history into a single flat list, Trelvix structures work into isolated containers. Each container operates with its own custom parameters, instruction sets, and document logs, preventing context leakage between distinct corporate or engineering projects.',
+      answer: 'Unlike standard AI interfaces that dump all chat history into a single flat list, Trelvix structures work into isolated containers. Each container operates with its own custom parameters, instruction sets, and document logs, preventing context leakage between distinct projects.',
     },
     {
       question: 'How do Fast Responses and Advanced Reasoning differ?',
@@ -121,7 +121,7 @@ export const FAQ: React.FC = () => {
           </div>
           <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-50">Still have questions?</h2>
           <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-            Our dedicated professional support engineers are standing by to clarify any compliance, security, or enterprise workflow specifications.
+            Our dedicated professional support engineers are standing by to clarify any compliance, security, or workspace workflow specifications.
           </p>
           <div className="pt-2">
             <Link 

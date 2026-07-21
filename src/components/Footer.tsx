@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
             <Brain className="w-4 h-4 text-emerald-500" />
           </div>
           <span className="font-sans text-base font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
-            Trelvix<span className="text-emerald-500">.ai</span>
+            Trelvix <span className="text-emerald-500">AI</span>
           </span>
         </div>
 

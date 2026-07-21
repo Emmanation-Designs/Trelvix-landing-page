@@ -41,8 +41,8 @@ export const FinalCTA: React.FC = () => {
 
         {/* CTA Button */}
         <div className="pt-4">
-          <button
-            onClick={handleScrollToPricing}
+          <a
+            href="https://trelvixai.com"
             className="group relative inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white bg-neutral-900 dark:bg-neutral-50 dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-2xl transition-all duration-300 shadow-xl cursor-pointer overflow-hidden"
           >
             <span className="relative z-10 flex items-center space-x-2.5">
@@ -50,7 +50,7 @@ export const FinalCTA: React.FC = () => {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </button>
+          </a>
         </div>
       </div>
     </section>
