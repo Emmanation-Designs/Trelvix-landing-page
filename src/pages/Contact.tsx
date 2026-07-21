@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { Mail, MapPin, Globe, CheckCircle2, Send, ArrowRight, Sparkles } from 'lucide-react';
+import { Mail, Globe, CheckCircle2, Send } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export const Contact: React.FC = () => {
@@ -19,6 +19,15 @@ export const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (formData.name && formData.email && formData.message) {
+      const targetEmail = 'ingeniumvirtualassistant@zohomail.com';
+      const subjectText = `${formData.subject} - From ${formData.name}`;
+      const bodyText = `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}\n\n---\nSent via Trelvix Workspace`;
+      
+      const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyText)}`;
+      
+      // Open default email client
+      window.location.href = mailtoUrl;
+      
       setFormSubmitted(true);
     }
   };
@@ -41,7 +50,7 @@ export const Contact: React.FC = () => {
                 Get in Touch with our <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400">Systems Lab</span>
               </h1>
               <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed font-sans">
-                Have inquiries regarding model training, bespoke deployment models, custom workspace licenses, or academic research partnerships? Drop our core engineers a line.
+                Have inquiries regarding our virtual assistant platform, custom workspace integrations, or partner inquiries? Drop us a message using the form or reach out directly.
               </p>
             </div>
 
@@ -55,24 +64,9 @@ export const Contact: React.FC = () => {
                   <p className="text-[10px] font-mono font-bold tracking-wider uppercase text-neutral-400 dark:text-neutral-500">
                     Secure Communications
                   </p>
-                  <a href="mailto:systems@trelvix.ai" className="text-sm font-semibold text-neutral-800 dark:text-neutral-100 hover:text-emerald-500 transition-colors">
-                    systems@trelvix.ai
+                  <a href="mailto:ingeniumvirtualassistant@zohomail.com" className="text-sm font-semibold text-neutral-800 dark:text-neutral-100 hover:text-emerald-500 transition-colors">
+                    ingeniumvirtualassistant@zohomail.com
                   </a>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0 text-emerald-500">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div className="space-y-1">
-                  <p className="text-[10px] font-mono font-bold tracking-wider uppercase text-neutral-400 dark:text-neutral-500">
-                    Physical Labs
-                  </p>
-                  <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-100">
-                    350 Innovation Way, Suite 400 <br />
-                    San Francisco, CA 94107
-                  </p>
                 </div>
               </div>
 
@@ -82,11 +76,16 @@ export const Contact: React.FC = () => {
                 </div>
                 <div className="space-y-1">
                   <p className="text-[10px] font-mono font-bold tracking-wider uppercase text-neutral-400 dark:text-neutral-500">
-                    Global Ingress
+                    Founder Website
                   </p>
-                  <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-100">
-                    Distributed nodes in US-West, EU-West, and Asia-Pacific regions.
-                  </p>
+                  <a 
+                    href="https://ingeniumvirtualassistant.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-sm font-semibold text-neutral-800 dark:text-neutral-100 hover:text-emerald-500 transition-colors flex items-center gap-1"
+                  >
+                    ingeniumvirtualassistant.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -146,9 +145,7 @@ export const Contact: React.FC = () => {
                       className="w-full px-4 py-3 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-950 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 text-sm transition-colors text-neutral-900 dark:text-neutral-50 cursor-pointer"
                     >
                       <option value="General Inquiry">General Inquiry</option>
-                      <option value="Enterprise Solution">Enterprise Solution / Cluster Deployment</option>
-                      <option value="Technical Support">Technical Workspace Support</option>
-                      <option value="Research & Licensing">Academic Research / Model Licensing</option>
+                      <option value="Workspace Support">Workspace Support</option>
                     </select>
                   </div>
 
@@ -162,7 +159,7 @@ export const Contact: React.FC = () => {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-950 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 text-sm transition-colors text-neutral-900 dark:text-neutral-50 h-36 resize-none"
-                      placeholder="Type the parameters of your inquiry here..."
+                      placeholder="Type your message here..."
                     />
                   </div>
 
@@ -170,7 +167,7 @@ export const Contact: React.FC = () => {
                     type="submit"
                     className="w-full py-3.5 bg-neutral-900 dark:bg-neutral-50 dark:text-neutral-900 text-white font-semibold rounded-xl text-sm transition-all hover:bg-neutral-800 dark:hover:bg-neutral-200 flex items-center justify-center space-x-2 shadow-md cursor-pointer"
                   >
-                    <span>Transmit Secure Packet</span>
+                    <span>Transmit Secure Message</span>
                     <Send className="w-4 h-4" />
                   </button>
                 </form>
@@ -179,10 +176,23 @@ export const Contact: React.FC = () => {
                   <div className="w-14 h-14 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 mx-auto">
                     <CheckCircle2 className="w-7 h-7" />
                   </div>
-                  <h3 className="text-2xl font-bold text-neutral-900 dark:text-neutral-50">Packet Transmitted</h3>
+                  <h3 className="text-2xl font-bold text-neutral-900 dark:text-neutral-50">Email Draft Prepared</h3>
                   <p className="text-sm text-neutral-500 dark:text-neutral-400 max-w-sm mx-auto leading-relaxed">
-                    Thank you, {formData.name}. Your secure inquiry on <strong>{formData.subject}</strong> has been encrypted and logged. A laboratory planner will contact you at <strong>{formData.email}</strong> within 12 hours.
+                    Thank you, {formData.name}. Your message has been prepared for transmission. If your email client did not open automatically, please send your inquiry to <strong className="text-emerald-500">ingeniumvirtualassistant@zohomail.com</strong> directly.
                   </p>
+                  <div className="pt-2">
+                    <button
+                      onClick={() => {
+                        const targetEmail = 'ingeniumvirtualassistant@zohomail.com';
+                        const subjectText = `${formData.subject} - From ${formData.name}`;
+                        const bodyText = `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}\n\n---\nSent via Trelvix Workspace`;
+                        window.location.href = `mailto:${targetEmail}?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyText)}`;
+                      }}
+                      className="px-5 py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-semibold tracking-wider uppercase transition-colors"
+                    >
+                      Re-open Email Client
+                    </button>
+                  </div>
                 </div>
               )}
             </div>

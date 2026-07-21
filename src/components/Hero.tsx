@@ -172,14 +172,6 @@ export const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         {/* Left Side Content */}
         <div className="lg:col-span-6 flex flex-col items-start space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full border border-neutral-200/80 dark:border-neutral-800/80 bg-neutral-50/50 dark:bg-neutral-900/30 backdrop-blur-sm shadow-sm">
-            <Sparkles className="w-4 h-4 text-emerald-500 animate-pulse" />
-            <span className="text-xs font-semibold font-mono tracking-wider uppercase text-neutral-600 dark:text-neutral-400">
-              The Next Evolution of AI Workspaces
-            </span>
-          </div>
-
           {/* Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-sans font-bold tracking-tight text-neutral-900 dark:text-neutral-50 leading-tight">
